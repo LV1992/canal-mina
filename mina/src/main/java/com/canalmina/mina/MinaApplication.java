@@ -1,28 +1,24 @@
-package canalmina;
+package com.canalmina.mina;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-/**
- * @author yihang.lv 2018/9/29、9:23
- */
 @Slf4j
 @SpringBootApplication
-public class CanalStarterApplication {
+public class MinaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CanalStarterApplication.class, args);
-        log.info("CanalStarterApplication start success !!!");
+        SpringApplication.run(MinaApplication.class, args);
+        log.info("MinaApplication start success !!!");
         Object obj = new Object();
-        try {
+        while (true) {
             synchronized (obj) {
-                while (true) {
+                try {
                     obj.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 }

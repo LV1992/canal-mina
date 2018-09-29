@@ -1,4 +1,4 @@
-package canalmina.util;
+package com.canalmina.canal.util;
 
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;

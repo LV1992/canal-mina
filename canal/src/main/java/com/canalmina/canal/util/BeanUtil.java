@@ -1,4 +1,4 @@
-package canalmina.util;
+package com.canalmina.canal.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

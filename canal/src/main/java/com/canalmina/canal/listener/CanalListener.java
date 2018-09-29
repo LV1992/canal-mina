@@ -1,11 +1,11 @@
-package canalmina.listener;
+package com.canalmina.canal.listener;
 
-import canalmina.config.properties.CanalProperty;
-import canalmina.util.ThreadPoolUtil;
 import com.alibaba.otter.canal.client.CanalConnector;
 import com.alibaba.otter.canal.client.CanalConnectors;
 import com.alibaba.otter.canal.protocol.CanalEntry;
 import com.alibaba.otter.canal.protocol.Message;
+import com.canalmina.canal.config.properties.CanalProperty;
+import com.canalmina.canal.util.ThreadPoolUtil;
 import com.google.protobuf.InvalidProtocolBufferException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
